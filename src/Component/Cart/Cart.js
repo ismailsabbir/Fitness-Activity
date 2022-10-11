@@ -3,8 +3,6 @@ import "./Cart.css";
 import logo from "../../images/profile-4.jpeg";
 const Cart = (props) => {
   const { cart } = props;
-  console.log(cart);
-  //console.log(props.cart.time);
   let total = 0;
   for (const product of cart) {
     total = total + product.time;
@@ -13,7 +11,6 @@ const Cart = (props) => {
   const breaktimeset = (time) => {
     let newtime = time;
     settime(newtime);
-    console.log("brek time clicked");
   };
 
   return (

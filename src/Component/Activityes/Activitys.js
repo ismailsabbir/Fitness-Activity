@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import "./Activitys.css";
 import logo from "../../images/logo1.jpg";
 import Activity from "../Activity/Activity";
@@ -16,7 +15,6 @@ const Activitys = () => {
   const addToCart = (products) => {
     let newcart = [...cart, products];
     setcart(newcart);
-    console.log(newcart);
     addToDb(products.id);
   };
   useEffect(() => {
@@ -28,7 +26,6 @@ const Activitys = () => {
         const quantity = storedcart[id];
         addedproduct.quantity = quantity;
         savecart.push(addedproduct);
-        console.log(addedproduct);
       }
     }
     setcart(savecart);
