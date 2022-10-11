@@ -4,6 +4,7 @@ import "./Activitys.css";
 import logo from "../../images/logo1.jpg";
 import Activity from "../Activity/Activity";
 import Cart from "../Cart/Cart";
+import { addToDb, getstoredcart } from "../../utilities/fakedb";
 const Activitys = () => {
   const [activities, setactivities] = useState([]);
   useEffect(() => {
@@ -16,7 +17,22 @@ const Activitys = () => {
     let newcart = [...cart, products];
     setcart(newcart);
     console.log(newcart);
+    addToDb(products.id);
   };
+  useEffect(() => {
+    const storedcart = getstoredcart();
+    const savecart = [];
+    for (const id in storedcart) {
+      const addedproduct = activities.find((product) => product.id === id);
+      if (addedproduct) {
+        const quantity = storedcart[id];
+        addedproduct.quantity = quantity;
+        savecart.push(addedproduct);
+        console.log(addedproduct);
+      }
+    }
+    setcart(savecart);
+  }, [activities]);
   return (
     <div className="activites">
       <div className="header">

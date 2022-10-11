@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cart.css";
 import logo from "../../images/profile-4.jpeg";
 const Cart = (props) => {
@@ -9,6 +9,12 @@ const Cart = (props) => {
   for (const product of cart) {
     total = total + product.time;
   }
+  const [breaktime, settime] = useState(0);
+  const breaktimeset = (time) => {
+    let newtime = time;
+    settime(newtime);
+    console.log("brek time clicked");
+  };
 
   return (
     <div>
@@ -37,16 +43,16 @@ const Cart = (props) => {
       </div>
       <h3 className="break">Add a Break</h3>
       <div className="breaktime">
-        <button>
+        <button onClick={() => breaktimeset(10)}>
           10 <span>s</span>
         </button>
-        <button>
+        <button onClick={() => breaktimeset(20)}>
           20 <span>s</span>
         </button>
-        <button>
+        <button onClick={() => breaktimeset(30)}>
           30 <span>s</span>
         </button>
-        <button>
+        <button onClick={() => breaktimeset(40)}>
           40 <span>s</span>
         </button>
       </div>
@@ -60,7 +66,7 @@ const Cart = (props) => {
         <div className="break-time">
           <h4>Break time</h4>
           <h4>
-            <span>15</span> secound
+            <span>{breaktime}</span> secound
           </h4>
         </div>
         <button>Activity Completed</button>
