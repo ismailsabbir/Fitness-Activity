@@ -5,7 +5,7 @@
     "imge": "https://mb.cision.com/Public/10340/9807907/9e07af0ecad7877f_800x800ar.jpg",
     "name": "Vaunch",
     "about": "Cillum fugiat minim culpa pariatur culpa ullamco est esse elit enim culpa.\r\n",
-    "age": 27,
+    "age": "25-30",
     "time": 60
   },
   {
@@ -14,7 +14,7 @@
     "imge": "https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2017/12/Stability-Ball-Exercises.jpg",
     "name": "Ball Crunch",
     "about": "Commodo amet dolor reprehenderit minim pariatur ipsum id exercitation eiusmod. \r\n",
-    "age": 31,
+    "age": "20-30",
     "time": 120
   },
   {
@@ -23,7 +23,7 @@
     "imge": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dumbbell-1649167008.jpg?crop=1.00xw:0.334xh;0,0.327xh&resize=640:*",
     "name": "Dumbbell",
     "about": "Velit qui laboris nisi aute eu officia est mollit quis ad quis ad cillum. Pariatur.\r\n",
-    "age": 35,
+    "age": "20-30",
     "time": 180
   },
   {
@@ -32,7 +32,7 @@
     "imge": "https://img.livestrong.com/375/clsd/getty/cee709e1db804b7987ade39ddf6a8dd1",
     "name": "bicycle crunch",
     "about": "Laborum nulla ut labore reprehenderit Lorem aliqua amet consequat velit proident tempor. \r\n",
-    "age": 24,
+    "age": "25-30",
     "time": 60
   },
   {
@@ -41,7 +41,7 @@
     "imge": "https://cdn.mos.cms.futurecdn.net/8pqYVQDnmf5ZEAY6gorthj-320-80.jpg",
     "name": "Leg Raises",
     "about": "Laboris elit deserunt nulla do duis Lorem enim tempor  occaecat irure reprehenderit deserunt. \r\n",
-    "age": 23,
+    "age": "20-25",
     "time": 30
   },
   {
@@ -50,7 +50,7 @@
     "imge": "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1481677709_1000x.jpg?v=1642054935",
     "name": "Side Lunges",
     "about": "Nisi eu do enim laboris mollit aute nostrud nisi qui reprehenderit labore qui. Anim ullamco aliqua \r\n",
-    "age": 20,
+    "age": "20-30",
     "time": 180
   }
 ]

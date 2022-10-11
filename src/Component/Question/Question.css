@@ -1,24 +1,52 @@
+.question {
+  margin-top: 50px;
+  background-color: rgb(241, 241, 243);
+  padding: 40px;
+}
+.question h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: darkblue;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 .react-work {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 .left {
   width: 50%;
+  padding: 30px;
 }
 .right {
   width: 50%;
+  padding: 30px;
 }
+
 img {
   width: 100%;
+  border-radius: 10px;
 }
 .props-state {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 .useeffect {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
 }

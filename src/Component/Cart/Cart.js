@@ -23,21 +23,25 @@ const Cart = (props) => {
           <img src={logo} alt="" />
         </div>
         <div className="person-detal">
-          <h3>Md:Ismail Hossain Sabbir</h3>
+          <h4>Ismail Hossain Sabbir</h4>
           <p>Dhaka , Bangladesh</p>
         </div>
       </div>
       <div className="body-measerment">
         <div className="weight">
-          <h1>55 kg</h1>
+          <h4>
+            55<span>Kg</span>
+          </h4>
           <p>Weight</p>
         </div>
         <div className="height">
-          <h1>6.5</h1>
+          <h4>6.5</h4>
           <p>Height</p>
         </div>
         <div className="age">
-          <h1>22yrs</h1>
+          <h4>
+            22<span>Yrs</span>
+          </h4>
           <p>Age</p>
         </div>
       </div>
@@ -59,17 +63,17 @@ const Cart = (props) => {
       <div className="detals">
         <div className="exercise-time">
           <h4>Exercise time</h4>
-          <h4>
+          <h4 className="time">
             <span>{total}</span> secound
           </h4>
         </div>
         <div className="break-time">
           <h4>Break time</h4>
-          <h4>
+          <h4 className="time">
             <span>{breaktime}</span> secound
           </h4>
         </div>
-        <button>Activity Completed</button>
+        <button className="com-btn">Activity Completed</button>
       </div>
     </div>
   );

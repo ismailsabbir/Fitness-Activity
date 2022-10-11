@@ -5,7 +5,8 @@ import logo1 from "../../images/props state.png";
 import logo2 from "../../images/useEffect.jpg";
 const Question = () => {
   return (
-    <div>
+    <div className="question">
+      <h1>React Blog</h1>
       <div className="react-work">
         <div className="left">
           <img src={logo} alt="" />
