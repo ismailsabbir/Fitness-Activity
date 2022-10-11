@@ -36,3 +36,10 @@
   font-weight: 600;
   /* font-size: 1rem; */
 }
+/* @media only screen and (min-width: 767px) {
+  .activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} */

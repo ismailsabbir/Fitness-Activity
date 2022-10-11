@@ -4,15 +4,20 @@ const Activity = (props) => {
 
   return (
     <div className="activity">
-      <img src={imge} alt="" />
-      <h4>{name}</h4>
-      <p className="about">{about}</p>
-      <p>
-        Fore Age :<span>{age}</span>
-      </p>
-      <p>
-        Time required: <span>{time}s</span>
-      </p>
+      <div className="image">
+        <img src={imge} alt="" />
+      </div>
+      <div className="item">
+        <h4>{name}</h4>
+        <p className="about">{about}</p>
+        <p>
+          Fore Age :<span>{age}</span>
+        </p>
+        <p>
+          Time required: <span>{time}s</span>
+        </p>
+      </div>
+
       {/* onClick={() => props.handler(props.activity) */}
       <button onClick={() => props.handler(props.activity)}>
         <p>Add To List</p>

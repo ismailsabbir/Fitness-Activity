@@ -37,3 +37,69 @@
   margin-left: 50px;
   border-radius: 10px;
 }
+@media only screen and (max-width: 600px) {
+  .header img {
+    width: 70px;
+    height: 70px;
+  }
+  .header h1 {
+    font-size: 1.2rem;
+  }
+  .activites {
+    padding: 10px;
+  }
+  .all-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .information-container {
+    margin: 0px;
+    width: 90%;
+    padding-bottom: 20px;
+  }
+}
+/* @media only screen and (min-width: 601px) and(max-width:992px) {
+  .activites {
+    background-color: brown;
+  }
+} */
+/* @media only screen and(min-width: 601px) and(max-width:992px) {
+  .activites {
+    background-color: brown;
+  }
+} */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header img {
+    width: 70px;
+    height: 70px;
+  }
+  .activites {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .all-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .information-container {
+    width: 80%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+}
