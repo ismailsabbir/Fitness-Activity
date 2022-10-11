@@ -1,7 +1,6 @@
 import "./Activity.css";
 const Activity = (props) => {
   const { name, imge, time, age, about } = props.activity;
-  console.log(props);
 
   return (
     <div className="activity">
@@ -10,8 +9,8 @@ const Activity = (props) => {
       <p>{about}</p>
       <p>Fore Age :{age}</p>
       <p>Time required:{time}s</p>
-
-      <button>
+      {/* onClick={() => props.handler(props.activity) */}
+      <button onClick={() => props.handler(props.activity)}>
         <p>Add To List</p>
       </button>
     </div>

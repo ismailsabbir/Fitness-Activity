@@ -11,6 +11,12 @@ const Activitys = () => {
       .then((res) => res.json())
       .then((data) => setactivities(data));
   }, []);
+  const [cart, setcart] = useState([]);
+  const addToCart = (products) => {
+    let newcart = [...cart, products];
+    setcart(newcart);
+    console.log(newcart);
+  };
   return (
     <div className="activites">
       <div className="header">
@@ -20,11 +26,15 @@ const Activitys = () => {
       <div className="all-container">
         <div className="activity-container">
           {activities.map((activity) => (
-            <Activity activity={activity} key={activity.id}></Activity>
+            <Activity
+              activity={activity}
+              handler={addToCart}
+              key={activity.id}
+            ></Activity>
           ))}
         </div>
         <div className="information-container">
-          <Cart></Cart>
+          <Cart cart={cart}></Cart>
         </div>
       </div>
     </div>

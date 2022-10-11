@@ -1,7 +1,15 @@
 import React from "react";
 import "./Cart.css";
 import logo from "../../images/profile-4.jpeg";
-const Cart = () => {
+const Cart = (props) => {
+  const { cart } = props;
+  console.log(cart);
+  //console.log(props.cart.time);
+  let total = 0;
+  for (const product of cart) {
+    total = total + product.time;
+  }
+
   return (
     <div>
       <div className="person-info">
@@ -46,7 +54,7 @@ const Cart = () => {
         <div className="exercise-time">
           <h4>Exercise time</h4>
           <h4>
-            <span>200</span> secound
+            <span>{total}</span> secound
           </h4>
         </div>
         <div className="break-time">
