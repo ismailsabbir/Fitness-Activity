@@ -1,0 +1,24 @@
+.react-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+img {
+  width: 100%;
+}
+.props-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.useeffect {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
